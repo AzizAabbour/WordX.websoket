@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { removeToast } from '../../store/slices/uiSlice';
 import { CheckCircle, AlertCircle, AlertTriangle, Info, X } from 'lucide-react';
 import './Toast.css';
