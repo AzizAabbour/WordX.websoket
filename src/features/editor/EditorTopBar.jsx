@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { setTitle } from '../../store/slices/editorSlice';
 import { ArrowLeft, CheckCircle2, RefreshCw, AlertCircle, Download, Share2, Printer, ZoomIn, ZoomOut } from 'lucide-react';

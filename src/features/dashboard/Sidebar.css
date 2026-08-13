@@ -145,3 +145,15 @@
   color: var(--danger-600);
   background-color: var(--danger-50);
 }
+
+@media (max-width: 1024px) {
+  .sidebar {
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-xl);
+  }
+
+  .sidebar.openMobile {
+    transform: translateX(0);
+  }
+}
+

@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import DocumentCard from '../dashboard/DocumentCard';
 import EmptyState from '../../components/EmptyState/EmptyState';
 import { Heart } from 'lucide-react';

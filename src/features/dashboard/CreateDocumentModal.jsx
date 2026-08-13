@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { closeModal } from '../../store/slices/uiSlice';
 import { addDocument } from '../../store/slices/documentsSlice';

@@ -11,7 +11,7 @@ import './Sidebar.css';
 export default function Sidebar() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { sidebarCollapsed, theme } = useSelector(state => state.ui);
+  const { sidebarCollapsed, sidebarOpen, theme } = useSelector(state => state.ui);
   const { logout } = useAuth();
 
   const handleCreateNew = () => {
@@ -29,7 +29,7 @@ export default function Sidebar() {
   ];
 
   return (
-    <aside className={`sidebar ${sidebarCollapsed ? 'collapsed' : ''}`}>
+    <aside className={`sidebar ${sidebarCollapsed ? 'collapsed' : ''} ${sidebarOpen ? 'openMobile' : ''}`}>
       <div className="sidebarHeader">
         <div className="sidebarBrand">
           <div className="sidebarLogo">

@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import {
   setPersonalInfo, setProfile, addExperience, updateExperience, removeExperience,
   addEducation, updateEducation, removeEducation, addSkill, removeSkill,

@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { setPersonalInfo, setRecipient, setField } from '../../store/slices/coverLetterSlice';
 import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';

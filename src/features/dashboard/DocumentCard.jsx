@@ -1,4 +1,4 @@
-import { useDispatch } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toggleFavorite, duplicateDocument, deleteDocument, renameDocument } from '../../store/slices/documentsSlice';
 import { Star, MoreVertical, FileText, User, Mail, Heart, BarChart3, Receipt, Building2, FileSignature, File, Copy, Trash2, Edit3 } from 'lucide-react';
