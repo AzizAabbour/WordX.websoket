@@ -1,0 +1,82 @@
+.settingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.settingsTabs {
+  display: flex;
+  gap: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: var(--space-2);
+}
+
+.settingTab {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  color: var(--color-text-secondary);
+}
+
+.settingTab:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text);
+}
+
+.settingTab.active {
+  background-color: var(--color-sidebar-active);
+  color: var(--color-sidebar-active-text);
+}
+
+.settingsCard {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+}
+
+.settingsForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 540px;
+}
+
+.settingsForm h2 {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-semibold);
+}
+
+.settingsDesc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.themeOptionsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.themeCard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  cursor: pointer;
+  background-color: var(--color-bg-secondary);
+}
+
+.themeCard.selected {
+  border-color: var(--color-primary);
+  background-color: var(--color-sidebar-active);
+  color: var(--color-sidebar-active-text);
+}

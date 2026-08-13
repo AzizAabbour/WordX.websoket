@@ -1,0 +1,108 @@
+.authFormContainer {
+  width: 100%;
+}
+
+.authFormHeader {
+  margin-bottom: var(--space-6);
+}
+
+.authTitle {
+  font-size: var(--text-3xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-text);
+  margin-bottom: var(--space-2);
+  letter-spacing: var(--tracking-tight);
+}
+
+.authSubtitle {
+  font-size: var(--text-base);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-normal);
+}
+
+.authErrorAlert {
+  padding: var(--space-3) var(--space-4);
+  background-color: var(--danger-50);
+  color: var(--danger-700);
+  border: 1px solid var(--danger-500);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-4);
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.authFormMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+  color: var(--color-text-secondary);
+}
+
+.forgotLink {
+  color: var(--color-primary);
+  font-weight: var(--weight-medium);
+}
+
+.forgotLink:hover {
+  text-decoration: underline;
+}
+
+.passwordToggle {
+  color: var(--color-text-tertiary);
+  padding: var(--space-1);
+}
+
+.passwordToggle:hover {
+  color: var(--color-text);
+}
+
+.authFormFooter {
+  margin-top: var(--space-6);
+  text-align: center;
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+}
+
+.authFormFooter a {
+  color: var(--color-primary);
+  font-weight: var(--weight-semibold);
+}
+
+.authFormFooter a:hover {
+  text-decoration: underline;
+}
+
+.authSuccessMessage {
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+.successIcon {
+  color: var(--success-500);
+  margin-bottom: var(--space-4);
+}
+
+.backToLogin {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}

@@ -1,0 +1,131 @@
+{
+  "app": {
+    "name": "WordX",
+    "tagline": "Professional Document Editor"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "documents": "My Documents",
+    "cvs": "CVs",
+    "coverLetters": "Cover Letters",
+    "templates": "Templates",
+    "favorites": "Favorites",
+    "trash": "Trash",
+    "settings": "Settings"
+  },
+  "auth": {
+    "login": "Log In",
+    "signup": "Sign Up",
+    "logout": "Log Out",
+    "email": "Email address",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "forgotPassword": "Forgot password?",
+    "resetPassword": "Reset Password",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "welcomeBack": "Welcome back",
+    "createAccount": "Create your account",
+    "loginSubtitle": "Sign in to continue to WordX",
+    "signupSubtitle": "Start creating professional documents"
+  },
+  "dashboard": {
+    "welcomeBack": "Welcome back, {{name}}",
+    "createNew": "Create New Document",
+    "createCV": "Create CV",
+    "createCoverLetter": "Create Cover Letter",
+    "browseTemplates": "Browse Templates",
+    "recentDocuments": "Recent Documents",
+    "quickActions": "Quick Actions",
+    "noDocuments": "No documents yet",
+    "noDocumentsDesc": "Create your first professional document to get started.",
+    "startCreating": "Start Creating"
+  },
+  "editor": {
+    "untitled": "Untitled Document",
+    "save": "Save",
+    "saved": "Saved",
+    "saving": "Saving...",
+    "unsaved": "Unsaved changes",
+    "export": "Export",
+    "share": "Share",
+    "print": "Print",
+    "downloadPDF": "Download PDF",
+    "downloadWord": "Download Word",
+    "zoom": "Zoom",
+    "undo": "Undo",
+    "redo": "Redo"
+  },
+  "documents": {
+    "rename": "Rename",
+    "duplicate": "Duplicate",
+    "delete": "Delete",
+    "restore": "Restore",
+    "favorite": "Add to Favorites",
+    "unfavorite": "Remove from Favorites",
+    "moveTo": "Move to...",
+    "lastEdited": "Last edited",
+    "created": "Created"
+  },
+  "templates": {
+    "title": "Templates",
+    "all": "All",
+    "free": "Free",
+    "premium": "Premium",
+    "useTemplate": "Use Template",
+    "preview": "Preview"
+  },
+  "cv": {
+    "builder": "CV Builder",
+    "personalInfo": "Personal Information",
+    "profile": "Professional Profile",
+    "experience": "Work Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "languages": "Languages",
+    "certifications": "Certifications",
+    "projects": "Projects",
+    "interests": "Interests",
+    "references": "References",
+    "addSection": "Add Section",
+    "changeTemplate": "Change Template"
+  },
+  "common": {
+    "search": "Search",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "close": "Close",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "noResults": "No results found",
+    "viewAll": "View All"
+  },
+  "settings": {
+    "title": "Settings",
+    "profile": "Profile",
+    "account": "Account",
+    "appearance": "Appearance",
+    "language": "Language",
+    "notifications": "Notifications",
+    "security": "Security",
+    "editor": "Editor Preferences",
+    "export": "Export Preferences",
+    "theme": "Theme",
+    "lightMode": "Light",
+    "darkMode": "Dark"
+  },
+  "landing": {
+    "headline": "Create Professional Documents in Minutes",
+    "subheadline": "Build stunning CVs, cover letters, reports, and professional documents with our powerful real-time editor. No design skills needed.",
+    "getStarted": "Get Started Free",
+    "viewTemplates": "View Templates",
+    "features": "Features",
+    "pricing": "Pricing",
+    "faq": "FAQ"
+  }
+}

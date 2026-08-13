@@ -1,0 +1,100 @@
+.editorHeader {
+  height: 48px;
+  background-color: var(--color-topbar-bg);
+  border-bottom: 1px solid var(--color-topbar-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-4);
+  z-index: var(--z-sticky);
+}
+
+.editorHeaderLeft {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.backBtn {
+  color: var(--color-text-secondary);
+  padding: var(--space-1);
+  border-radius: var(--radius-sm);
+}
+
+.backBtn:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text);
+}
+
+.documentTitleInput {
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  color: var(--color-text);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 2px var(--space-2);
+  width: 240px;
+}
+
+.documentTitleInput:hover {
+  border-color: var(--color-border);
+}
+
+.documentTitleInput:focus {
+  border-color: var(--color-primary);
+  background-color: var(--color-bg);
+}
+
+.saveStatusIndicator {
+  font-size: var(--text-xs);
+}
+
+.statusSaved { color: var(--success-600); display: flex; align-items: center; gap: 4px; }
+.statusSaving { color: var(--color-primary); display: flex; align-items: center; gap: 4px; }
+.statusUnsaved { color: var(--warning-600); display: flex; align-items: center; gap: 4px; }
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.editorHeaderRight {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.zoomControls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  background-color: var(--color-bg-secondary);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+}
+
+.zoomControls button {
+  color: var(--color-text-secondary);
+  padding: 2px;
+}
+
+.zoomControls button:hover {
+  color: var(--color-text);
+}
+
+.zoomLabel {
+  min-width: 36px;
+  text-align: center;
+}
+
+.topBarBtn {
+  padding: var(--space-1-5);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+}
+
+.topBarBtn:hover {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text);
+}

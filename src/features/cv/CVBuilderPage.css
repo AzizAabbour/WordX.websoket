@@ -1,0 +1,156 @@
+.cvBuilderPage {
+  display: flex;
+  height: calc(100vh - var(--topbar-height));
+  overflow: hidden;
+}
+
+.cvFormPanel {
+  width: 50%;
+  padding: var(--space-6);
+  overflow-y: auto;
+  background-color: var(--color-bg);
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.cvFormHeader h1 {
+  font-size: var(--text-2xl);
+  font-weight: var(--weight-bold);
+}
+
+.cvFormHeader p {
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.cvFormSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background-color: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+}
+
+.cvFormSection h3 {
+  font-size: var(--text-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.templateOptions {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.templateBtn {
+  flex: 1;
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-weight: var(--weight-semibold);
+  font-size: var(--text-xs);
+  background: var(--color-bg);
+}
+
+.templateBtn.active {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.sectionTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cvCardItem {
+  position: relative;
+  background-color: var(--color-bg);
+  padding: var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.removeCardBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  color: var(--danger-600);
+}
+
+.cvPreviewPanel {
+  width: 50%;
+  background-color: var(--color-editor-workspace);
+  padding: var(--space-6);
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.cvPaperPreview {
+  width: 210mm;
+  min-height: 297mm;
+  background-color: white;
+  box-shadow: var(--shadow-page);
+  padding: 20mm;
+  color: #111827;
+}
+
+.cvDocTemplate.modern .cvHeader {
+  border-bottom: 2px solid #2563eb;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.cvDocTemplate.modern h1 {
+  font-size: 24px;
+  color: #1e3a8a;
+}
+
+.cvDocTemplate.minimal .cvHeader {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.cvSec {
+  margin-bottom: 20px;
+}
+
+.cvSec h2 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #3b82f6;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+}
+
+.cvItem {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+  .cvBuilderPage {
+    flex-direction: column;
+  }
+  .cvFormPanel, .cvPreviewPanel {
+    width: 100%;
+  }
+}

@@ -1,0 +1,62 @@
+/* ============================================
+   Print Styles
+   ============================================ */
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 12pt !important;
+  }
+
+  /* Hide all app chrome */
+  .no-print,
+  .sidebar,
+  .topbar,
+  .editor-toolbar,
+  .editor-topbar,
+  .editor-sidebar,
+  .toast-container,
+  nav,
+  header,
+  footer {
+    display: none !important;
+  }
+
+  /* Show only the document */
+  .editor-workspace {
+    background: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .editor-page {
+    box-shadow: none !important;
+    margin: 0 !important;
+    border: none !important;
+    page-break-after: always;
+  }
+
+  .editor-page:last-child {
+    page-break-after: auto;
+  }
+
+  /* Ensure links show URL */
+  a[href]:after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+
+  /* Prevent images from breaking */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+
+  /* Page setup */
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}

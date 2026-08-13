@@ -1,0 +1,70 @@
+.editorToolbar {
+  height: var(--editor-toolbar-height);
+  background-color: var(--color-editor-toolbar-bg);
+  border-bottom: 1px solid var(--color-editor-toolbar-border);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0 var(--space-4);
+  overflow-x: auto;
+  user-select: none;
+  z-index: var(--z-sticky);
+}
+
+.toolbarGroup {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.tbBtn {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.tbBtn:hover:not(:disabled) {
+  background-color: var(--color-surface-hover);
+  color: var(--color-text);
+}
+
+.tbBtn.active {
+  background-color: var(--color-sidebar-active);
+  color: var(--color-sidebar-active-text);
+}
+
+.tbBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.tbDivider {
+  width: 1px;
+  height: 20px;
+  background-color: var(--color-border);
+  margin: 0 var(--space-1);
+}
+
+.tbSelect {
+  height: 28px;
+  padding: 0 var(--space-2);
+  font-size: var(--text-xs);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.colorPickerInput {
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
